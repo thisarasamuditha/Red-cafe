@@ -1,0 +1,107 @@
+/* General Home Section Styles */
+#home {
+  background: url('/public/background.jpg') no-repeat center center/cover; /* Replace with your café image */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Overlay for better text visibility */
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a subtle dark overlay */
+  z-index: 1;
+}
+
+.home-content {
+  text-align: center;
+  z-index: 2; /* Ensures content is above the overlay */
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* Main Heading */
+.home-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Subtext */
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Logo Styles */
+.home-logo {
+  width: 400px; /* Adjust the size of your logo */
+  height: auto;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in-out; /* Adds a smooth fade-in effect */
+  z-index: 2; /* Ensures it appears above the overlay */
+}
+
+/* Keyframes for Logo Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Keyframes for Fade Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

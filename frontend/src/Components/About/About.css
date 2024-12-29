@@ -1,0 +1,83 @@
+.about {
+  background-color: #fff; /* White background for a clean, modern look */
+  color: #333; /* Dark gray text for readability */
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for a card-like effect */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about:hover {
+  background-color: #f1f8f7; /* Light teal background on hover for a refreshing look */
+  transform: translateY(-5px); /* Slightly lift the section on hover */
+}
+
+.about h2 {
+  font-size: 3rem; /* Larger heading for better impact */
+  font-weight: 700; /* Bold for a stronger presence */
+  color: #2c3e50; /* Deep, elegant blue-gray color */
+  margin-bottom: 30px;
+  text-transform: uppercase; /* Gives a more stylish look */
+  letter-spacing: 2px; /* Spacing for a clean look */
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555; /* Softer gray for the paragraph */
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic; /* Adds a soft emphasis to the text */
+}
+
+.about::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: linear-gradient(90deg, #ff6f61, #f39c12, #3498db); /* Gradient line for an energetic feel */
+  margin: 0 auto 30px;
+  border-radius: 4px;
+}
+
+.about button {
+  background-color: #ff6f61; /* Vibrant coral color for buttons */
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about button:hover {
+  background-color: #f39c12; /* Hover effect with a golden shade */
+  transform: scale(1.05); /* Slight scale-up effect */
+}
+
+.about button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.7); /* Glow effect for focused buttons */
+}
+
+.about .highlight {
+  color: #ff6f61; /* Highlight important words or phrases in coral */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 10px; /* Less padding on smaller screens */
+  }
+
+  .about h2 {
+    font-size: 2.2rem; /* Slightly smaller heading for mobile */
+  }
+
+  .about p {
+    font-size: 1.1rem; /* Slightly smaller paragraph text for readability on small screens */
+  }
+}
