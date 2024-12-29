@@ -1,4 +1,3 @@
-// filepath: /C:/Users/THISARA/cafeWeb/backend/routes/authRoutes.js
 import express from "express";
 import { registerUser, loginUser } from "../auth/auth.js";
 
